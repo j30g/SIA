@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+</head>
+	
+	<style type="text/css">
+		*{
+			font-family: sans-serif;
+			padding: 0;
+			margin: 0;
+		}
+
+		#headspan{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			position: fixed;
+			 width:100%;
+  			float: left;
+ 			 color: black;
+			background-color: coral;
+			box-shadow: 0 5px skyblue;
+		}
+		
+		#horizontal{
+			transition: .3s;
+			font-family: sans-serif;
+			font-weight: bolder;
+		display: inline-block;
+		margin-left: 20%;
+		padding:20px;
+		}
+
+		#horizontal:hover{
+			background: white;
+			border-radius: 50px;
+			cursor: pointer;
+		}
+
+
+		#mainhorizontal{
+			cursor: pointer;
+			border-radius: 50px;
+			font-family: sans-serif;
+			font-weight: bolder;
+		display: inline-block;
+		margin-left: 20%;
+		padding:20px;
+		background-color: white;
+		}
+
+		a{
+			color: black;
+				text-decoration: none;
+		}
+
+		#profile{
+			position: absolute;
+		}
+
+
+		#vertical1,#vertical2,#vertical3{
+			transition: .3s;
+			width:150px;
+			font-weight: bold;
+			cursor: pointer;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+			border-radius: 50px;
+			background-color: skyblue;
+			margin-top:130px ;
+			margin-left: 10px;
+			 box-shadow: 0 5px coral;
+		}
+
+	#vertical1:hover,#vertical2:hover,#vertical3:hover{
+			background-color: slateblue;
+			box-shadow: none;
+		}
+
+
+		#overlay1{
+			color: black;
+			position: fixed;
+  			display: none;
+  			width: 50%;
+  			height: 70%;
+  			top: 20%;
+  			left: 25%;
+  			right: 0;
+  			bottom: 0;
+  			background-color:skyblue;
+  			cursor: pointer;
+  			border: 10px coral solid;
+		}
+
+		#overlay2{
+			color: black;
+			position: fixed;
+  			display: none;
+  			width: 50%;
+  			height: 70%;
+  			top: 20%;
+  			left: 25%;
+  			right: 0;
+  			bottom: 0;
+  			background-color:skyblue;
+  			cursor: pointer;
+  			border: 10px coral solid;
+		}
+
+		#overlay3{
+			color: black;
+			position: fixed;
+  			display: none;
+  			width: 50%;
+  			height: 70%;
+  			top: 20%;
+  			left: 25%;
+  			right: 0;
+  			bottom: 0;
+  			background-color:skyblue;
+  			cursor: pointer;
+  			border: 10px coral solid;
+		}
+
+
+
+
+
+	</style>
+
+<body>
+
+	<span id="headspan">
+	
+		<div id="mainhorizontal"><a href="#">Profile</a></div>
+		<a href="file:///C:/Users/maria%20fe/Documents/Roa119_jeo/travel.html"><div id="horizontal">Travel</div></a>
+		<a href="file:///C:/Users/maria%20fe/Documents/Roa119_jeo/career.html#"><div id="horizontal">Career</div></a>
+
+	</span>
+
+	<span id="profile">
+		
+		<div id="vertical1" onclick="on1()">Personal <br>Data</div>
+		<div id="vertical2" onclick="on2()">Educational <br>Background</div>
+		<div id="vertical3" onclick="on3()">Family <br>Background</div>
+
+	</span>
+
+	<!--Profile overlays1-->
+ 	<div id="overlay1" onclick="off1()">
+ 		
+ 		<img src="personalimage.jpg" style="width:150px; border-radius: 100px; margin-left: 38%; margin-top: 5%; border:5px black solid;">
+
+ 		<div style="margin-top: 10%; margin-left: 30%; font-weight: bold;">
+ 			Name:<br><br>
+ 			Age:<br><br>
+ 			Address:<br><br>
+ 			Birthday:
+ 		</div>
+ 	</div>
+
+
+ 	<!--Profile overlays2-->
+ 	<div id="overlay2" onclick="off2()">
+ 		
+ 		<img src="educational.jpg" style="width:150px; margin-left: 38%; margin-top: 5%; border-radius: 20px; border:5px black solid;">
+
+ 		<div style="margin-top: 10%; margin-left: 30%; font-weight: bold;">
+ 			Elementary graduate 2013-2014<br><br>
+ 			High School graduate 2017-2018<br><br>
+ 			Senior High School graduate 2019-2020<br><br>
+ 		</div>
+ 	</div>
+
+ 	<!--Profile overlays3-->
+ 	<div id="overlay3" onclick="off3()">
+ 		
+ 		<img src="family.jpg" style="width:150px; margin-left: 38%; margin-top: 5%; border-radius: 20px; border:5px black solid;">
+
+ 		<div style="margin-top: 10%; margin-left: 30%; font-weight: bold;">
+ 			Mother's Name:<br><br>
+ 			Occupation:<br><br>
+ 			Father's Name:<br><br>
+ 			Occupation:
+ 		</div>
+ 	</div>
+
+
+
+	<!--overlays--><script>
+
+//overlay1
+function on1() {
+  document.getElementById("overlay1").style.display = "block";
+
+}
+
+function off1() {
+  document.getElementById("overlay1").style.display = "none";
+}
+
+//overlay2
+function on2() {
+  document.getElementById("overlay2").style.display = "block";
+
+}
+
+function off2() {
+  document.getElementById("overlay2").style.display = "none";
+}
+
+//overlay3
+function on3() {
+  document.getElementById("overlay3").style.display = "block";
+
+}
+
+function off3() {
+  document.getElementById("overlay3").style.display = "none";
+}
+</script><!--endoverlays-->
+
+
+
+</body>
+</html>

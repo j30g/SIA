@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Career</title>
+</head>
+	
+	<style type="text/css">
+		*{
+			font-family: sans-serif;
+			padding: 0;
+			margin: 0;
+		}
+
+		#headspan{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			position: fixed;
+			 width:100%;
+  			float: left;
+ 			 color: black;
+			background-color: #fd61f1;
+			box-shadow: 0 5px #61fd6d;
+		}
+		
+		#horizontal{
+			transition: .3s;
+			font-family: sans-serif;
+			font-weight: bolder;
+		display: inline-block;
+		margin-left: 20%;
+		padding:20px;
+		}
+		
+		#horizontal:hover{
+			background: white;
+			border-radius: 50px;
+			cursor: pointer;
+		}
+
+
+		#mainhorizontal{
+			cursor: pointer;
+			border-radius: 50px;
+			font-family: sans-serif;
+			font-weight: bolder;
+		display: inline-block;
+		margin-left: 20%;
+		padding:20px;
+		background-color: white;
+		}
+
+		a{
+			color: black;
+				text-decoration: none;
+		}
+
+		#profile{
+			position: absolute;
+		}
+
+
+		#vertical1,#vertical2,#vertical3{
+			transition: .3s;
+			width:150px;
+			font-weight: bold;
+			cursor: pointer;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+			border-radius: 50px;
+			background-color: #61fd6d;
+			margin-top:130px ;
+			margin-left: 10px;
+			 box-shadow: 0 5px #fd61f1;
+		}
+
+		#vertical1:hover,#vertical2:hover,#vertical3:hover{
+			background-color: #3a9741;
+			box-shadow: none;
+		}
+
+
+		#overlay1{
+			color: black;
+			position: fixed;
+  			display: none;
+  			width: 50%;
+  			height: 70%;
+  			top: 20%;
+  			left: 25%;
+  			right: 0;
+  			bottom: 0;
+  			background-color:#61fd6d;
+  			cursor: pointer;
+  			border: 10px #fd61f1 solid;
+		}
+
+		#overlay2{
+			color: black;
+			position: fixed;
+  			display: none;
+  			width: 50%;
+  			height: 70%;
+  			top: 20%;
+  			left: 25%;
+  			right: 0;
+  			bottom: 0;
+  			background-color:#61fd6d;
+  			cursor: pointer;
+  			border: 10px #fd61f1 solid;
+		}
+
+		#overlay3{
+			color: black;
+			position: fixed;
+  			display: none;
+  			width: 50%;
+  			height: 70%;
+  			top: 20%;
+  			left: 25%;
+  			right: 0;
+  			bottom: 0;
+  			background-color:#61fd6d;
+  			cursor: pointer;
+  			border: 10px #fd61f1 solid;
+		}
+
+	</style>
+
+<body>
+
+	<span id="headspan">
+	
+		<a href="file:///C:/Users/maria%20fe/Documents/Roa119_jeo/profile.html">
+			<div id="horizontal">Profile</div>
+		</a>
+
+		<a href="file:///C:/Users/maria%20fe/Documents/Roa119_jeo/travel.html">
+			<div id="horizontal">Travel</div>
+		</a>
+		
+		<div id="mainhorizontal"><a href="#">Career</a></div>
+
+	</span>
+
+	<span id="profile">
+		
+		<div id="vertical1" onclick="on1()">Career #1</div>
+		<div id="vertical2" onclick="on2()">Career #2</div>
+		<div id="vertical3" onclick="on3()">Career #3</div>
+
+	</span>
+
+	<!--Profile overlays1-->
+ 	<div id="overlay1" onclick="off1()">
+ 		
+ 		<img src="career1.jpg" style="width:150px; margin-left: 38%; margin-top: 5%; border-radius: 20px; border:5px black solid;">
+
+ 		<div style="margin-top: 3%; margin-left: 6%; text-align: center;">
+ 			<h3>Creating A Career Goal</h3>
+ 			<p style="height: 100px; width: 600px;">	<br>
+ 			<b>Write down the steps.</b> Write down your career goal and the steps to get there. This will help you remember and achieve each step. Post your list where you will see it often.
+			<b>Set deadlines.</b> Give yourself a date to complete your goals by. Write the date when you actually finish each step.
+			<b>Reward yourself.</b> Taking steps toward goals is hard work. Think of small rewards to give yourself when you complete any step, to help you stay motivated.
+			<b>Have a goal partner</b>. Find someone to help you stick to your plan: a friend, co-worker, a job coach, or someone else. Discuss your goals, and check in with them when you complete steps. If possible, do the same for your partner!</p>
+ 		</div>
+ 	</div>
+
+
+ 	<!--Profile overlays2-->
+ 	<div id="overlay2" onclick="off2()">
+ 		
+ 		<img src="career2.jpg" style="width:150px; margin-left: 38%; margin-top: 5%; border-radius: 20px; border:5px black solid;">
+
+ 		<div style="margin-top: 3%; margin-left: 6%; text-align: center;">
+ 			<h3>Working Towards Professional Development</h3>
+ 			<p style="height: 100px; width: 600px; font-size: 15px; margin-top:15px;"> Professional development means taking positive steps toward improving your skills and knowledge. Taking ownership of your own development can help you to feel more empowered and confident in your abilities. <br>When you dedicate time to building up expertise, you'll be seen by your boss, colleagues and clients as someone who is able to make valuable, intelligent and insightful contributions. This will soon earn you a reputation as the go-to person on the team who can turn their hand to anything. In addition, your newfound expert power will make it easier for you to win support for your projects, to negotiate contracts, and to respond to change.<br> You'll also find that your professional value goes up! If you have a long list of skills to your name, you'll be more marketable and you'll be in a better position to take on a challenging new project, or even a promotion.</p>
+ 		</div>
+
+ 	</div>
+
+ 	<!--Profile overlays3-->
+ 	<div id="overlay3" onclick="off3()">
+ 		
+ 		<img src="career3.jpg" style="width:150px; margin-left: 38%; margin-top: 5%; border-radius: 20px; border:5px black solid;">
+
+ 		<div style="margin-top: 3%; margin-left: 2%; text-align: center;">
+ 			<h3 style="text-transform: capitalize;">experiencing career stability</h3>
+ 			<p style="height: 50vh; width: 500px; margin-left:90px; margin-top: 25px;"> Job stability is the duration for which an employee stays with their current job without disruption.
+			It’s essential for employers to foster a sense of job stability. But these last few years have changed the way the world approaches what we know to be job stability.</p>
+ 		</div>
+
+ 	</div>
+
+
+
+	<!--overlays--><script>
+
+//overlay1
+function on1() {
+  document.getElementById("overlay1").style.display = "block";
+
+}
+
+function off1() {
+  document.getElementById("overlay1").style.display = "none";
+}
+
+//overlay2
+function on2() {
+  document.getElementById("overlay2").style.display = "block";
+
+}
+
+function off2() {
+  document.getElementById("overlay2").style.display = "none";
+}
+
+//overlay3
+function on3() {
+  document.getElementById("overlay3").style.display = "block";
+
+}
+
+function off3() {
+  document.getElementById("overlay3").style.display = "none";
+}
+</script><!--endoverlays-->
+
+
+
+</body>
+</html>

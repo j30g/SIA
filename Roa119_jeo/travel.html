@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Travel</title>
+</head>
+	
+	<style type="text/css">
+		*{
+		
+			font-family: sans-serif;
+			padding: 0;
+			margin: 0;
+		}
+
+		#headspan{
+			padding-top: 5px;
+			padding-bottom: 5px;
+			position: fixed;
+			 width:100%;
+  			float: left;
+ 			 color: black;
+			background-color: #61FD6D;
+			box-shadow: 0 5px khaki ;
+		}
+		
+		#horizontal{
+			transition: .3s;
+			font-family: sans-serif;
+			font-weight: bolder;
+		display: inline-block;
+		margin-left: 20%;
+		padding:20px;
+		}
+		
+		#horizontal:hover{
+			background: white;
+			border-radius: 50px;
+			cursor: pointer;
+		}
+
+
+		#mainhorizontal{
+			cursor: pointer;
+			border-radius: 50px;
+			font-family: sans-serif;
+			font-weight: bolder;
+		display: inline-block;
+		margin-left: 20%;
+		padding:20px;
+		background-color: white;
+		}
+
+		a{
+			color: black;
+				text-decoration: none;
+		}
+
+		#profile{
+			position: absolute;
+		}
+
+
+		#vertical1,#vertical2,#vertical3{
+			transition: .3s;
+			width:150px;
+			font-weight: bold;
+			cursor: pointer;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			text-align: center;
+			border-radius: 50px;
+			background-color:khaki ;
+			margin-top:130px ;
+			margin-left: 10px;
+			 box-shadow: 0 5px #61FD6D;
+		}
+
+		#vertical1:hover,#vertical2:hover,#vertical3:hover{
+			background-color: darkkhaki;
+			box-shadow: none;
+		}
+
+
+		#overlay1{
+			color: black;
+			position: fixed;
+  			display: none;
+  			width: 50%;
+  			height: 70%;
+  			top: 20%;
+  			left: 25%;
+  			right: 0;
+  			bottom: 0;
+  			background-color:khaki;
+  			cursor: pointer;
+  			border: 10px #61FD6D solid;
+		}
+
+		#overlay2{
+			color: black;
+			position: fixed;
+  			display: none;
+  			width: 50%;
+  			height: 70%;
+  			top: 20%;
+  			left: 25%;
+  			right: 0;
+  			bottom: 0;
+  			background-color:khaki;
+  			cursor: pointer;
+  			border: 10px #61FD6D solid;
+		}
+
+		#overlay3{
+			color: black;
+			position: fixed;
+  			display: none;
+  			width: 50%;
+  			height: 70%;
+  			top: 20%;
+  			left: 25%;
+  			right: 0;
+  			bottom: 0;
+  			background-color:khaki;
+  			cursor: pointer;
+  			border: 10px #61FD6D solid;
+		}
+
+	</style>
+
+<body>
+
+	<span id="headspan">
+	
+		<a href="file:///C:/Users/maria%20fe/Documents/Roa119_jeo/profile.html">
+			<div id="horizontal">Profile</div>
+		</a>
+
+		<div id="mainhorizontal"><a href="#">Travel</a></div>
+
+		<a href="file:///C:/Users/maria%20fe/Documents/Roa119_jeo/career.html#">
+			<div id="horizontal">Career</div>
+		</a>
+
+	</span>
+
+	<span id="profile">
+		
+		<div id="vertical1" onclick="on1()">Place #1</div>
+		<div id="vertical2" onclick="on2()">Place #2</div>
+		<div id="vertical3" onclick="on3()">Place #3</div>
+
+	</span>
+
+	<!--Profile overlays1-->
+ 	<div id="overlay1" onclick="off1()">
+ 		
+ 		<img src="location1.jpg" style="width:150px; margin-left: 38%; margin-top: 5%; border-radius: 20px; border:5px black solid;">
+
+ 		<div style="margin-top: 3%; margin-left: 6%; text-align: center;">
+ 			<h3>Great Wall of China</h3>
+ 			<p style="height: 100px; width: 600px;">Great might be an understatement. One of the world’s largest building-construction projects, the Great Wall of China is widely thought to be about 5,500 miles (8,850 km) long; a disputed Chinese study, however, claims the length is 13,170 miles (21,200 km). Work began in the 7th century BCE and continued for two millennia. Although called a “wall,” the structure actually features two parallel walls for lengthy stretches. In addition, watchtowers and barracks dot the bulwark. One not-so-great thing about the wall, however, was its effectiveness. Although it was built to prevent invasions and raids, the wall largely failed to provide actual security. Instead, scholars have noted that it served more as “political propaganda.”</p>
+ 		</div>
+ 	</div>
+
+
+ 	<!--Profile overlays2-->
+ 	<div id="overlay2" onclick="off2()">
+ 		
+ 		<img src="location2.jpg" style="width:150px; margin-left: 38%; margin-top: 5%; border-radius: 20px; border:5px black solid;">
+
+ 		<div style="margin-top: 3%; margin-left: 6%; text-align: center;">
+ 			<h3>Chichén Itzá</h3>
+ 			<p style="height: 100px; width: 600px;">Chichén Itzá is a Mayan city on the Yucatán Peninsula in Mexico, which flourished in the 9th and 10th centuries CE. Under the Mayan tribe Itzá—who were strongly influenced by the Toltecs—a number of important monuments and temples were built. Among the most notable is the stepped pyramid El Castillo (“The Castle”), which rises 79 feet (24 meters) above the Main Plaza. A testament to the Mayans’ astronomical abilities, the structure features a total of 365 steps, the number of days in the solar year. During the spring and autumnal equinoxes, the setting sun casts shadows on the pyramid that give the appearance of a serpent slithering down the north stairway; at the base is a stone snake head. Life there was not all work and science, however. Chichén Itzá is home to the largest tlachtli (a type of sporting field) in the Americas. On that field the residents played a ritual ball game popular throughout pre-Columbian Mesoamerica.</p>
+ 		</div>
+
+ 	</div>
+
+ 	<!--Profile overlays3-->
+ 	<div id="overlay3" onclick="off3()">
+ 		
+ 		<img src="location3.jpg" style="width:150px; margin-left: 38%; margin-top: 5%; border-radius: 20px; border:5px black solid;">
+
+ 		<div style="margin-top: 3%; margin-left: 2%; text-align: center;">
+ 			<h3>Petra</h3>
+ 			<p style="height: 50vh; width: 650px;">The ancient city of Petra, Jordan, is located in a remote valley, nestled among sandstone mountains and cliffs. It was purported to be one of the places where Moses struck a rock and water gushed forth. Later the Nabataeans, an Arab tribe, made it their capital, and during this time it flourished, becoming an important trade center, especially for spices. Noted carvers, the Nabataeans chiseled dwellings, temples, and tombs into the sandstone, which changed color with the shifting sun. In addition, they constructed a water system that allowed for lush gardens and farming. At its height, Petra reportedly had a population of 30,000. The city began to decline, however, as trade routes shifted. A major earthquake in 363 CE caused more difficulty, and after another tremor hit in 551, Petra was gradually abandoned. Although rediscovered in 1912, it was largely ignored by archaeologists until the late 20th century, and many questions remain about the city.</p>
+ 		</div>
+
+ 	</div>
+
+
+
+	<!--overlays--><script>
+
+//overlay1
+function on1() {
+  document.getElementById("overlay1").style.display = "block";
+
+}
+
+function off1() {
+  document.getElementById("overlay1").style.display = "none";
+}
+
+//overlay2
+function on2() {
+  document.getElementById("overlay2").style.display = "block";
+
+}
+
+function off2() {
+  document.getElementById("overlay2").style.display = "none";
+}
+
+//overlay3
+function on3() {
+  document.getElementById("overlay3").style.display = "block";
+
+}
+
+function off3() {
+  document.getElementById("overlay3").style.display = "none";
+}
+</script><!--endoverlays-->
+
+
+
+</body>
+</html>
